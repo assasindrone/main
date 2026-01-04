@@ -1,10 +1,160 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My First Site</title>
-  </head>
-  <body>
-    <h1>This site is about an assasin drone that flies autonomously day an night and search for target 🌍</h1>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stallion Flight Notes</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: rgba(255, 255, 255, 0.06);
+      --text: #f2f4f8;
+      --muted: rgba(242, 244, 248, 0.75);
+      --border: rgba(255, 255, 255, 0.10);
+      --shadow: 0 20px 60px rgba(0,0,0,0.45);
+      --radius: 16px;
+      --max: 980px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(1200px 600px at 30% 0%, #1a2030 0%, var(--bg) 55%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 48px 20px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      letter-spacing: 0.4px;
+    }
+
+    header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 20px 20px 60px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    /* If you want both images, keep both <img> tags below.
+       If you only want one, delete one of them. */
+    .images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 14px;
+      padding: 14px;
+    }
+
+    .images img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+      background: #fff;
+    }
+
+    .content {
+      padding: 22px;
+    }
+
+    .label {
+      display: inline-block;
+      font-size: 0.85rem;
+      color: var(--muted);
+      padding: 6px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+
+    blockquote {
+      margin: 0;
+      padding: 16px 16px 16px 18px;
+      border-left: 4px solid rgba(255,255,255,0.25);
+      background: rgba(255,255,255,0.04);
+      border-radius: 12px;
+      color: var(--text);
+    }
+
+    blockquote p {
+      margin: 0 0 12px;
+    }
+
+    blockquote p:last-child {
+      margin-bottom: 0;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding: 18px 0 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Assasin autonomous drone</h1>
+    <p>Capable of autonomous flight, hover stability, transition behavior, and payload delivery</p>
+  </header>
+
+  <main class="wrap">
+    <section class="card hero">
+      <div class="images">
+        <!-- Use one or both images -->
+        <img src="vtol.jpg" alt="VTOL drone render">
+        <img src="vtol1.jpg" alt="VTOL drone prototype">
+      </div>
+
+      <div class="content">
+        <div class="label">Assassin drone using AI and Computer Vision</div>
+
+        <blockquote>
+	<p>We are offering an autonomous drone that will fly day and night, will stop to recharge from solar power and continue its journey until it finds its preprogrammed target.</p>
+          <p>In hover it will be very stable.It will perform transition to forward flight after it reaches a proper speed—around 50 km/h—before exiting transition mode.</p>
+          <p>In fixed wings flight, it will fly around 70 min and around a distance of 70km before it will land for recharge.Its center of gravity is at 30%/p>
+	          <p>It will carry a payload of 2kg/p>
+<p>This site is about an assasin drone that flies autonomously day an night and search for target 🌍</p>
+
+        </blockquote>
+
+        <footer>
+          Tip: put <strong>index.html</strong> and your image files in the same folder before deploying.
+        </footer>
+      </div>
+    </section>
+  </main>
+
+</body>
 </html>
+
+
+
+
